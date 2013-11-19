@@ -12,9 +12,9 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BBAE0B250C68D26F003E9A38 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAE0B240C68D26F003E9A38 /* Controller.m */; };
-		BBB09F78183BBC23000541F5 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB09F77183BBC23000541F5 /* ApplicationServices.framework */; };
 		BBB09F7B183BBF8A000541F5 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB09F79183BBF8A000541F5 /* menu.png */; };
-		BBB09F7E183BDDFD000541F5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB09F7D183BDDFD000541F5 /* icon.png */; };
+		BBB09F80183BE313000541F5 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB09F7F183BE313000541F5 /* ApplicationServices.framework */; };
+		BBB09F84183BE3CE000541F5 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BBB09F83183BE3CE000541F5 /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,12 +39,13 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* MenuApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuApp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Connected?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connected?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* AutoLoginWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLoginWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAE0B230C68D26F003E9A38 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		BBAE0B240C68D26F003E9A38 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		BBB09F77183BBC23000541F5 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = ../../../../Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<group>"; };
 		BBB09F79183BBF8A000541F5 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
-		BBB09F7D183BDDFD000541F5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BBB09F7F183BE313000541F5 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = ../../../../../Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<group>"; };
+		BBB09F83183BE3CE000541F5 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB09F78183BBC23000541F5 /* ApplicationServices.framework in Frameworks */,
+				BBB09F80183BE313000541F5 /* ApplicationServices.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +89,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Connected?.app */,
+				8D1107320486CEB800E47090 /* AutoLoginWindow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +120,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BBB09F7D183BDDFD000541F5 /* icon.png */,
+				BBB09F83183BE3CE000541F5 /* icon.icns */,
 				BBB09F79183BBF8A000541F5 /* menu.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -131,6 +132,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBB09F7F183BE313000541F5 /* ApplicationServices.framework */,
 				BBB09F77183BBC23000541F5 /* ApplicationServices.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
@@ -157,7 +159,7 @@
 			name = AutoLoginWindow;
 			productInstallPath = "$(HOME)/Applications";
 			productName = MenuApp;
-			productReference = 8D1107320486CEB800E47090 /* Connected?.app */;
+			productReference = 8D1107320486CEB800E47090 /* AutoLoginWindow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,8 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB09F7E183BDDFD000541F5 /* icon.png in Resources */,
 				BBB09F7B183BBF8A000541F5 /* menu.png in Resources */,
+				BBB09F84183BE3CE000541F5 /* icon.icns in Resources */,
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 			);
@@ -246,7 +248,8 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				PRODUCT_NAME = "Connected?";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = AutoLoginWindow;
 				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
@@ -273,8 +276,9 @@
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
-				PRODUCT_NAME = "Connected?";
+				PRODUCT_NAME = AutoLoginWindow;
 				SDKROOT = macosx10.7;
 				STRIP_INSTALLED_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
