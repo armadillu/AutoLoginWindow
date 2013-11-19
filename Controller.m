@@ -84,7 +84,7 @@
 
 	timer = nil;
 	if(DEBUG_SAY) [NSTask launchedTaskWithLaunchPath:@"/usr/bin/say" arguments:@[@"timeOut"] ];
-
+	loggedIn = false;
 	//this takes us to login screen, without logging out
 	[NSTask launchedTaskWithLaunchPath:@"/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession"
 							 arguments:@[@"-suspend", @">", @"/dev/null"] ];
